@@ -5,8 +5,7 @@
 \usepackage{listings}
 
 \title{MetaOS startup with a Python file. Internal reference}
-\author{Sergio Alvarez (setelena@gmail.com),
-    Luis F. Canals (luisf.canals@gmail.com)}
+\author{Luis F. Canals (luisf.canals@gmail.com)}
 
 \begin{document}
 
@@ -19,14 +18,14 @@
 \section{Involved classes}
 
 \lstset{language=Java,frame=single,tabsize=2,basicstyle=\tiny}
-\lstinputlisting{../src/java/com/metaos/engine/Engine.java}
+\lstinputlisting{../src/main/java/com/metaos/engine/Engine.java}
 
 As it's seen from the code, a R source code named \emph{correlation.r}
 where a class \emph{correlator} is defined. The class should have got the
 methods \emph{memo} and \emph{show}, as in this example:
 
 \lstset{language=R,frame=single,tabsize=2,basicstyle=\tiny}
-\lstinputlisting{../src/R/correlation.r}
+\lstinputlisting{../src/main/R/correlation.r}
 
 
 
@@ -37,7 +36,7 @@ in the previous section but letting the name of R source containing the
 class as a runtime parameter:
 
 \lstset{language=Python,frame=single,tabsize=2,basicstyle=\tiny}
-\lstinputlisting{../src/python/rintegration.py}
+\lstinputlisting{../src/test/jython/rintegration.py}
 
 In this case, interface for R class has been modified, to create a simple
 predictor with two methods, \emph{learn} and \emph{predict}. An example of
